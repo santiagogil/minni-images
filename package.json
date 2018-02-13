@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "test": "standard && nsp check && istanbul cover tape test.js",
+    "test": "standard && nsp check && istanbul cover tape test.js && codecov",
     "commit": "git-cz",
     "setup": "npm i && semantic-release-cli setup",
     "lint-prose": "write-good *.md",
@@ -41,6 +41,7 @@
     }
   },
   "dependencies": {
+    "codecov": "^3.0.0",
     "glob": "^7.1.2",
     "jimp": "^0.2.28"
   }
