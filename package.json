@@ -1,0 +1,47 @@
+{
+  "name": "minni-images",
+  "version": "0.0.0-development",
+  "description": "Scale images for responsive usage",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "standard && nsp check && istanbul cover tape test.js",
+    "commit": "git-cz",
+    "setup": "npm i && semantic-release-cli setup",
+    "lint-prose": "write-good *.md",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santiagogil/minni-images.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiagogil/minni-images/issues"
+  },
+  "homepage": "https://github.com/santiagogil/minni-images#readme",
+  "devDependencies": {
+    "tape": "*",
+    "standard": "*",
+    "nsp": "*",
+    "commitizen": "*",
+    "cz-conventional-changelog": "*",
+    "semantic-release-cli": "*",
+    "istanbul": "*",
+    "write-good": "*",
+    "travis-deploy-once": "^4.3.4",
+    "semantic-release": "^12.4.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "jimp": "^0.2.28"
+  }
+}
