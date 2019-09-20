@@ -41,7 +41,7 @@
     }
   },
   "dependencies": {
-    "codecov": "^3.0.0",
+    "codecov": "^3.6.0",
     "glob": "^7.1.2",
     "jimp": "^0.2.28"
   }
